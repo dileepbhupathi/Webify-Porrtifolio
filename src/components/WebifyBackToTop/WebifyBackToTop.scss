@@ -1,0 +1,65 @@
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.25em;
+  background: white;
+  color: rgba(0, 0, 0, 0.829);
+  cursor: pointer;
+  border-radius: 0.5em;
+  border: 0px solid;
+  width: 12%;
+  height: 7vh;
+  -webkit-font-smoothing: antialiased;
+  z-index: 5000;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: slideInUp;
+  animation-duration: 0.5s;
+  opacity: 1;
+  box-shadow: 0 2px 4px 0 rgb(17 17 18 / 10%);
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  animation-name: slideInUp;
+}
+
+
+@media only screen and (min-width:'768px') {
+  .back-to-top {
+    color: rgb(110, 110, 110);
+    width: 4.5%;
+    height: 6.5vh;
+  }
+}
+
+@media only screen and (min-width:'1024px') {
+  .back-to-top {
+    color: rgb(90, 90, 90);
+    width: 4%;
+    height: 5.5vh;
+    font-size: 1.5em;
+  }
+}
+
+ @media only screen and (min-width : '1440px') {
+  .back-to-top {
+    color: rgb(90, 90, 90);
+    width: 3%;
+    height: 4.5vh;
+    font-size: 1.5em;
+  }
+ }

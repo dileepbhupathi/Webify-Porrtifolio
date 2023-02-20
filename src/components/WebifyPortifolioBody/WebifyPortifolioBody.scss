@@ -1,0 +1,47 @@
+.webify-portifolio-body-container{
+    padding-top: 20.4%;
+}
+
+.webify-portifolio-images {
+  width: 100%;
+  object-fit: cover;
+}
+
+.webify-images-container {
+  overflow: hidden;
+  display: block;
+}
+
+.webify-images-container:hover {
+  .webify-portifolio-images {
+    transform: scale(1.1);
+    transition: 0.2s ease;
+    filter: brightness(65%);
+  }
+}
+
+@media only screen and (min-width:'768px') {
+    .webify-portifolio-body-container{
+        padding-top: 8.5%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .webify-images-container {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: '1024px') {
+    .webify-portifolio-body-container{
+        padding-top: 7.3%;
+    }
+    .webify-images-container {
+        width: 25%;
+    }
+}
+
+ @media only screen and (min-width:'1440px') {
+    .webify-portifolio-body-container{
+        padding-top: 4.8%;
+    }
+ }

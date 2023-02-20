@@ -1,0 +1,23 @@
+.app {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+.cursor {
+  cursor: url('../public/icons8-plus.svg'),auto;
+}
